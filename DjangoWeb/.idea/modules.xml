@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://D:/Autotesing/.idea/Autotesing.iml" filepath="D:/Autotesing/.idea/Autotesing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/DjangoWeb.iml" filepath="$PROJECT_DIR$/.idea/DjangoWeb.iml" />
+      <module fileurl="file://D:/Modle_improve/.idea/Modle_improve.iml" filepath="D:/Modle_improve/.idea/Modle_improve.iml" />
+      <module fileurl="file://D:/code_lialng/.idea/untitled.iml" filepath="D:/code_lialng/.idea/untitled.iml" />
+    </modules>
+  </component>
+</project>

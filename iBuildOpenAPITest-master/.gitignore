@@ -1,0 +1,12 @@
+
+.DS_Store
+*.numbers
+*.pages
+*~HEAD
+*.pyc
+*.log
+.last.vim
+.last.viminfo
+.vscode
+__pycache__
+.pyc

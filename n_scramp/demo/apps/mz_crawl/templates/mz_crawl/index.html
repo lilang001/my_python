@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div>
+    <p>TOP20 关键字标签</p>
+    <p><a href="{% url "crawl:tags" %}">所有标签..</a></p>
+    <ul>
+        {% for tag in tags %}
+            <li>
+                {{ forloop.counter }}.
+                <a href="{{ tag.url }}">{{ tag.name }}({{ tag.count }})</a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
+</body>
+</html>

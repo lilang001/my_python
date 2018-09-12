@@ -1,0 +1,4 @@
+http://vendor.yzw.cn.qa:8000/VendorPortal/Bidding/Index
+http://vendor.yzw.cn.qa:8000/VendorPortal/OutputOrder/Index
+http://vendor.yzw.cn.qa:8000/VendorPortal/DeliveryReceipt/Index
+http://vendor.yzw.cn.qa:8000/VendorPortal/Bidding/Detail?tenderSysNo=31433&supplierSysNo=193132

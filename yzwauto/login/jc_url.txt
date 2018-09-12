@@ -1,0 +1,5 @@
+http://auth.yzw.cn.qa:8000/Login/ForgetPassword
+http://auth.yzw.cn.qa:8000/Login/ForgetPassword?type=1
+http://auth.yzw.cn.qa:8000/Login/ForgetPassword?type=0
+http://www.yzw.cn.qa:8000/
+http://auth.yzw.cn.qa:8000/login/v2

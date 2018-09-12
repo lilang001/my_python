@@ -1,0 +1,48 @@
+<!--
+说明:
+分页仅仅是在当前路径上，修改page参数
+
+sum_page:总页数
+current_page:当前页
+    -->
+<script src="//cdn.bootcss.com/jquery/3.0.0-alpha1/jquery.min.js"></script>
+<link href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="{{ STATIC_URL }}js/bootstrap-paginator.js"></script>
+<div class="pagination pull-center">
+    <div id="page1"></div>
+</div>
+<script>
+    //分页功能
+    var sum_page = {{sum_page}};
+    var current_page = {{current_page}};
+    var visiblePage = 8;
+    if (sum_page < visiblePage) {
+        visiblePage = sum_page;
+    }
+
+    var options = {
+        currentPage: current_page,
+        totalPages: sum_page,
+        numberOfPages: visiblePage,
+        pageUrl: function (type, page, current) {
+            var temp = window.location.href;
+            var re = /page=\d+/i
+            if (re.test(temp)) {
+                temp = temp.replace(/page=\d+/i, "page=" + page);
+            } else {
+                if (temp.indexOf('?') == -1) {
+                    temp = temp + "?page=" + page
+                }
+                else {
+                    temp = temp + "&page=" + page
+                }
+            }
+
+            return temp
+        }
+    };
+    $('#page1').bootstrapPaginator(options);
+</script>
+
+

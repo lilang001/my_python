@@ -1,0 +1,13 @@
+http://portal.jc.yzw.cn.qa:8000/TenderMgt/TenderOpen/CalibrationResult?SysNo=31407
+http://portal.jc.yzw.cn.qa:8000/ReportMgt/KPICompleteReport/Index
+http://portal.jc.yzw.cn.qa:8000/Home/Index
+http://portal.jc.yzw.cn.qa:8000/TenderMgt/Tender/List
+http://portal.jc.yzw.cn.qa:8000/TenderMgt/Tender/Detail?SysNo=32450
+http://portal.jc.yzw.cn.qa:8000/TenderMgt/TenderSend/TenderFileEdit?SysNo=31408
+http://portal.jc.yzw.cn.qa:8000/TenderMgt/TenderSend/TenderFilePreview?SysNo=31408
+http://portal.jc.yzw.cn.qa:8000/ContractMgt/OutputOrder/Print?sysNo=12360
+http://portal.jc.yzw.cn.qa:8000/ContractMgt/OutputOrder/Print?sysNo=12354
+http://portal.jc.yzw.cn.qa:8000/TenderMgt/TenderOpen/CalibrationResult?SysNo=31358
+http://portal.jc.yzw.cn.qa:8000/mobilesite/main#!/auditMgt/myAudit
+http://portal.jc.yzw.cn.qa:8000/website/main/#!/contractMgt/print/contract?sysno=46855
+http://portal.jc.yzw.cn.qa:8000/website/main/#!/contractMgt/print/contract?sysno=46847

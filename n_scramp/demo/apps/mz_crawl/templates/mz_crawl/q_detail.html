@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div style="width: 50%">
+
+    <div>
+        <h2>{{ q.title }}</h2>
+
+        <p>浏览量:{{ q.count_view }}回答:{{ q.count_answer }}权重:{{ q.weight }}</p>
+
+        <p>
+            {% for tag in tags %}
+
+                <a href="{{ tag.url }}">{{ tag.name }}</a>
+
+            {% endfor %}
+        </p>
+
+        <p>数据抓取时间:{{ q.create_time }}</p>
+
+        <p>原文路径:<a href="{{ q.src_url }}">{{ q.src_url }}</a></p>
+
+    </div>
+    <div>
+        <h3>问题内容:</h3>
+
+        <div>
+            <div>
+                <p>{{ q.content }}</p>
+            </div>
+
+        </div>
+    </div>
+    <div>
+        <h3>{{ q.count_answer }}个回答(源站):</h3>
+        {% for a in answers %}
+            <div style="background: {% if a.is_accepted %}green{% else %}darkgray{% endif %}">
+                {{ a.content }}
+            </div>
+
+        {% endfor %}
+
+    </div>
+</div>
+{% include "mz_crawl/i_hot_tags.html" %}
+</body>
+</html>

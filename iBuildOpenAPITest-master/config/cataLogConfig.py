@@ -1,0 +1,92 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+catalogMethodMap = [{
+    "cataLogCode": "env_monitor",
+    "cataLogName": "环境监测实时数据",
+    "method": "upload.envMonitorLiveData"
+}, {
+    "cataLogCode": "water_meter",
+    "cataLogName": "水表实时数据",
+    "method": "upload.waterMeterLiveData"
+}, {
+    "cataLogCode": "electricity_meter",
+    "cataLogName": "电表实时数据",
+    "method": "upload.electricityMeterLiveData"
+}, {
+    "cataLogCode": "soil_temp",
+    "cataLogName": "养护室监测实时数据",
+    "method": "upload.curingRoomLiveData"
+}, {
+    "cataLogCode": "intrusion_detector",
+    "cataLogName": "越界监测实时数据",
+    "method": "upload.intrusionDetectorLiveData"
+}, {
+    "cataLogCode": "quality_manage",
+    "cataLogName": "质量巡检数据",
+    "method": "upload.qualityCheckData"
+}, {
+    "cataLogCode": "security_manage",
+    "cataLogName": "安全巡检数据",
+    "method": "upload.securityCheckData"
+}, {
+    "cataLogCode": "process_manage",
+    "cataLogName": "进度数据",
+    "method": "upload.processTaskData"
+}, {
+    "cataLogCode": "sewage_outfall",
+    "cataLogName": "排污监测实时数据",
+    "method": "upload.sewageOutfallLiveData"
+}, {
+    "cataLogCode": "rain_recovery",
+    "cataLogName": "雨水回收实时数据",
+    "method": "upload.rainRecoveryLiveData"
+}, {
+    "cataLogCode": "vehicle_management",
+    "cataLogName": "智慧停车实时数据",
+    "method": "upload.vehicleManagementLiveData"
+}, {
+    "cataLogCode": "tower_crane",
+    "cataLogName": "塔吊实时数据",
+    "method": "upload.towerCraneLiveData"
+}, {
+    "cataLogCode": "tower_crane_deviceParams",
+    "cataLogName": "塔吊设备参数",
+    "method": "upload.towerCraneDeviceParams"
+}, {
+    "cataLogCode": "tower_crane_heartbeat",
+    "cataLogName": "塔吊心跳数据",
+    "method": "upload.towerCraneHeartbeat"
+}, {
+    "cataLogCode": "unloading_platform",
+    "cataLogName": "卸料平台实时数据",
+    "method": "upload.unloadingPlatformLiveData"
+}, {
+    "cataLogCode": "unloading_platform_deviceParams",
+    "cataLogName": "卸料平台设备参数",
+    "method": "upload.unloadingPlatformDeviceParams"
+}, {
+    "cataLogCode": "construction_elevator",
+    "cataLogName": "施工电梯实时数据",
+    "method": "upload.constructionElevatorLiveData"
+}, {
+    "cataLogCode": "construction_elevator_deviceParams",
+    "cataLogName": "施工电梯设备参数",
+    "method": "upload.constructionElevatorDeviceParams"
+}, {
+    "cataLogCode": "hanging_basket",
+    "cataLogName": "吊篮实时数据",
+    "method": "upload.hangingBasketLiveData"
+}, {
+    "cataLogCode": "hanging_basket_deviceParams",
+    "cataLogName": "吊篮设备参数",
+    "method": "upload.hangingBasketDeviceParams"
+}, {
+    "cataLogCode": "concrete_temp",
+    "cataLogName": "混凝土测温实时数据",
+    "method": "upload.concreteTempLiveData"
+}, {
+    "cataLogCode": "smoke_detector",
+    "cataLogName": "烟感监测实时数据",
+    "method": "upload.smokeDetectorLiveData"
+}]

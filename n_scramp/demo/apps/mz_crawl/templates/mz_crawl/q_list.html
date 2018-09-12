@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div>
+    <h2>标签:{{ tag }} {{ title }}</h2>
+    <ul>
+        {% for q in questions %}
+            <li>
+                {{ forloop.counter }}
+                <a id="question_{{ q.id }}" target="_blank" href="{% url "crawl:question" q.id %}">{{ q.title }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
+<div>
+    <a href="javascript:window.history.back()">
+        &lt;back
+    </a>
+
+    <p>{% include "mz_crawl/i_hot_tags.html" %}</p>
+    {% if not title %}
+        <p>{% include "paginator.html" %}</p>
+    {% else %}
+        <a href="{% url "crawl:questions" %}?tag={{ tag }}&show=all">更多..</a>
+    {% endif %}
+</div>
+</body>
+</html>

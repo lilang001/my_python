@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div>
+    <h2>标签数量:{{ tags.count }}</h2>
+    <ul>
+        {% for t in tags %}
+            <li>
+                <a href="{{ t.url }}">{{ t.name }}({{ t.count }})</a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
+
+<a href="javascript:window.history.back()">
+    &lt;back
+</a>
+{% include "mz_crawl/i_hot_tags.html" %}
+{% include "paginator.html" %}
+</body>
+</html>

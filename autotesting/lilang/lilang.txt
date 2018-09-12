@@ -1,0 +1,5 @@
+{'regular': 20, 'cash': 200, 'finance': 1}
+adasd
+asdsasad
+
+afsaf
