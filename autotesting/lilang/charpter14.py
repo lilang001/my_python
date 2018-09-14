@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 __author__ = 'admin'
 import sys
+import os
 
 def foo():
     pass
@@ -27,6 +28,10 @@ class D(object):
     def __call__(self, *args):
         print ("im callable")
 
+# 进程
+def os_test():
+    ret = os.fork()
+    return os.system('dir')
 
 
 
@@ -66,7 +71,7 @@ while result==True:
 #     """)
 
 
-# page592
+# page601
 
 
 
